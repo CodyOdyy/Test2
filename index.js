@@ -4,14 +4,22 @@ const app = express()
 app.use(express.json());
 
 const coins = [
-    { id:1, name: 'Dodge'},
-    { id:2, name: 'coin2'},
-    { id:3, name: 'coin3'},
+    { id:1, name: 'Doge'},
+    { id:2, name: 'Ethereum'},
+    { id:3, name: 'Litecoin'},
+    { id:4, name: 'Cardano'},
+    { id:5, name: 'Polkadot'},
+    { id:6, name: 'BitcoinCash'},
+    { id:7, name: 'Stellar'},
+    { id:8, name: 'BinanceCoin'},
+    { id:9, name: 'Tether'},
+    { id:9, name: 'Monero'}
+
 
 ];
 
 app.get('/', (req, res) => {
-    res.send('Hello world');
+    res.send('Welcome to Coinbase Exchange');
 });
 
 app.get('/coins/types', (req, res) => {
